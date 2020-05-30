@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right,#ff6363,#79d70f);
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.container{
+    width:400px;
+    height: 80%;
+    border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #fff;
+    margin: 0 10px;
+}
+.header{
+    width:100%;
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+    padding: 10px 20px;
+    text-align: center;
+}
+form {
+    width:100%;
+    height:100%;
+    padding:5px 45px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.form-control {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+}
+.form-control label {
+    margin-bottom: 5px;
+}
+.form-control input {
+	border: 1px solid #f0f0f0;
+	border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+.form-control.success input {
+	border-color: #2ecc71;
+}
+.form-control.error input {
+	border-color: #e74c3c;
+}
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 36px;
+	right: 10px;
+}
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+.form-control.error small {
+	visibility: visible;
+}
+form button {
+    width: 100%;
+    background-image: linear-gradient(to right,#ff6363,#79d70f);
+	border: 2px solid white;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+    padding: 10px;
+    letter-spacing:5px;
+    cursor:pointer;
+}
